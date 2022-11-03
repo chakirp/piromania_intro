@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:piromania_intro/Resources/Public/Images/logo.svg
+        fileInverted = EXT:piromania_intro/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Piromania Intro
+        linktitle = Piromania Intro
+    }
+    favicon {
+        file = EXT:piromania_intro/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:piromania_intro/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:piromania_intro/Resources/Private/Partials/Page/
+        templateRootPath = EXT:piromania_intro/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:piromania_intro/Resources/Private/Layouts/
+        partialRootPath = EXT:piromania_intro/Resources/Private/Partials/
+        templateRootPath = EXT:piromania_intro/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:piromania_intro/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:piromania_intro/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:piromania_intro/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}

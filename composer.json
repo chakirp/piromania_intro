@@ -1,0 +1,21 @@
+{
+    "name": "piromaniacom/piromania-intro",
+    "type": "typo3-cms-extension",
+    "description": "skin testing on v11",
+    "homepage": "https://piromania.com",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Piromaniacom\\PiromaniaIntro\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "piromania_intro"
+        }
+    }
+}
